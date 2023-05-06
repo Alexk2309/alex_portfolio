@@ -1,0 +1,53 @@
+.portfolio_background {
+    background-color: rgb(5, 11, 39);
+    min-height: 100vh;
+   
+    display: flex;
+   
+}
+
+
+.example-container {
+    background: white;
+    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+.typewriter-container {
+    width: 600px;
+    position: relative;
+    color: var(--lightest-slate);
+}
+
+#bio {
+    font-size: 40px;
+}
+
+.layout {
+    width: 500px;
+    color: rgb(230, 216, 216);
+    position: relative;
+    display: flex;
+    font-size: 90px;
+    top: 40px; /* Default position */
+    left: 300px;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    margin: 150px;
+}
+
+#portfolio_username {
+    font-weight: bold;
+    color: aqua;
+} 
+
+.section_header {
+    font-size: 20px,
+}
+
+.about_me {
+    position: relative;
+    top: 500px;
+    font-size: 20px,
+}
