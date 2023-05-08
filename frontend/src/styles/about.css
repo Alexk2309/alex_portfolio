@@ -1,0 +1,35 @@
+.about_layout {
+    display: flex;
+    padding-left: 15%;
+    position: relative;
+    flex-direction: column;
+    min-height: 60vh;
+}
+
+.about_content {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    max-height: 320px;
+}
+
+.about_description {
+    display: flex;
+   box-sizing: border-box;
+   flex-direction: column;
+    
+}
+
+#portfolio_photo {
+    scale: 0.3;
+    display: block;
+    position: relative;
+    max-width: 100px;
+    align-self: flex-start;
+    top: -359px;
+}
+
+#about_me_label {
+    font-size: 40px;
+    color: aqua;
+}

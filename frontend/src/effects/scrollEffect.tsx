@@ -3,15 +3,13 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 const headerVariants = {
-  visible: { opacity: 1, transition: { duration: 2 }, y: 400 },
-  hidden: { opacity: 0, y: 800 }
+  visible: { opacity: 1, transition: { duration: 1.5 }, y: '0' },
+  hidden: { opacity: 0, y: '10vh' }
 };
 
 const HeaderSection = ({ children }: any) => {
     const control = useAnimation();
-    const [ref, inView] = useInView({
-        rootMargin: '300px'
-    });
+    const [ref, inView] = useInView();
 
     useEffect(() => {
         if (inView) {

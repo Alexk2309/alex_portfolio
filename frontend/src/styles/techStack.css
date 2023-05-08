@@ -1,0 +1,10 @@
+.tech_layout {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+.tech_items {
+    padding-right: 3%;
+}

@@ -57,12 +57,11 @@ function MyMoon() {
     );
 }
 
-
 function IntroPage() {
   return (
-    <>
-        <motion.div className='example-container' initial={{y: 300}} animate={{x: 1000}} > </motion.div>
-        <div className="intro_layout">
+    <div className="intro_layout">
+        <div className='intro_content'>
+        <motion.div className='example-container' initial={{x: 0}} animate={{x: 200}} > </motion.div>
             <div className='typewriter-container'>
             <Typewriter 
                 options={{
@@ -79,17 +78,14 @@ function IntroPage() {
                 transition={{duration: 1,
                     ease: "easeInOut"}}>
                 <span>I program sometimes.</span>
-                <p style={{fontSize: "20px", lineHeight: '1.65', maxWidth: 'px' }}>
+                <p style={{fontSize: "20px", lineHeight: '1.8'}}>
                     I'm an aspiring software engineer, currently based in Sydney.
-                    I have interest in fullstack development and data science.
-                    Currently studying a&nbsp;
-                    <span style={{fontWeight: 'bold', display: 'inline-block'}}>
-                        Bachelor's of Computer Science at UNSW.
-                    </span>
+                    I have interest in fullstack development and data science. I
+                    create projects now and then.
                 </p>
             </motion.div>
         </div>
-    </>
+    </div>
   );
 }
 export default IntroPage;
