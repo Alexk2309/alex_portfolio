@@ -8,15 +8,13 @@
 
 .about_content {
     display: flex;
-    box-sizing: border-box;
     flex-direction: row;
-    max-height: 320px;
+    max-height: 600px;
 }
 
 .about_description {
     display: flex;
-   box-sizing: border-box;
-   flex-direction: column;
+    flex-direction: column;
     
 }
 
@@ -32,4 +30,11 @@
 #about_me_label {
     font-size: 40px;
     color: aqua;
+}
+
+#about_final {
+    padding-top: 30px;
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.8;
 }
