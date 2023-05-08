@@ -2,12 +2,13 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const headerVariants = {
-  visible: { opacity: 1, transition: { duration: 1.5 }, y: '0' },
-  hidden: { opacity: 0, y: '10vh' }
-};
+const HeaderSection = ({ children, duration = 1.5 }: any) => {
 
-const HeaderSection = ({ children }: any) => {
+    const headerVariants = {
+        visible: { opacity: 1, transition: { duration: duration }, y: '0' },
+        hidden: { opacity: 0, y: '10vh' }
+    };
+
     const control = useAnimation();
     const [ref, inView] = useInView();
 
@@ -28,5 +29,7 @@ const HeaderSection = ({ children }: any) => {
     </motion.div>
   );
 };
+
+
 
 export default HeaderSection;
