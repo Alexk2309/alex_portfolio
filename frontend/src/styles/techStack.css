@@ -1,10 +1,25 @@
-.tech_layout {
+
+.tech_item li::before {
+    content: "▹    ";
+    color: aqua;
+    position: absolute;
+    left: 0;
+}
+
+.tech_item li {
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 16px;
+    font-size: 16px;    
+    list-style-type: none;
+}
+
+.tech_item {
+    padding-right: 15px;
+    max-width: 600px;
     display: flex;
     position: relative;
     flex-direction: row;
     padding-top: 2%;
 }
 
-.tech_items {
-    padding-right: 3%;
-}

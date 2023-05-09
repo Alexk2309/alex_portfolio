@@ -11,3 +11,36 @@
     color: aqua;
     margin-bottom:200px;
 }
+
+#job_info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 17px;
+}
+
+#job_title{
+    font-size: 30px;
+}
+
+#job_timeline{
+    font-size: 18px;
+}
+.job-description li::before {
+    content: "▹    ";
+    color: aqua;
+    position: absolute;
+    left: 0;
+}
+
+.job-description li {
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 16px;
+    font-size: 16px;    
+    list-style-type: none;
+}
+
+.job-description {
+    padding-top: 24px;
+    max-width: 600px;
+}  
