@@ -1,15 +1,9 @@
 .experience_layout {
-   
+    display: flex;
+    flex-direction: column;
     padding-left: 15%;
     position: relative;
-    
-    min-height: 60vh;
-}
-
-#experience_label {
-    font-size: 40px;
-    color: aqua;
-    margin-bottom:200px;
+    min-height: 55vh;
 }
 
 #job_info {

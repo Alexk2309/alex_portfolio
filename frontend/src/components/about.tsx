@@ -1,4 +1,5 @@
-import '../styles/introPage.css';
+import '../styles/about.css';
+import '../styles/index.css';
 import HeaderSection from '../effects/scrollEffect';
 import TechStack from './teckStack';
 import  profilePhoto from '../effects/bmo.jpg'
@@ -7,7 +8,7 @@ function About() {
     return (
         <HeaderSection>
             <div className='about_layout'> 
-                <span id='about_me_label'>/about me</span>
+                <span className='header-label'>/about-me</span>
                 <div className='about_content'>
                     <div className='about_description'>
                         <p style={{fontSize: '20px', maxWidth: '600px', lineHeight: '1.8' }}>

@@ -1,4 +1,5 @@
 import '../styles/experience.css';
+import '../styles/index.css';
 import HeaderSection from '../effects/scrollEffect';
 
 import ExperienceList from './experienceList';
@@ -8,10 +9,8 @@ function Experience() {
     return (
         <HeaderSection>
             <div className='experience_layout'> 
-                <span id='experience_label'>/experience </span>
-                <div style={{paddingTop:'30px'}}>
+                <span className='header-label' style={{paddingBottom: '30px'}}>/experience </span>
                 <ExperienceList></ExperienceList>
-                </div>
             </div>
         </HeaderSection>
     );

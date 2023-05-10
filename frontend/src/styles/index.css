@@ -14,3 +14,34 @@ code {
     monospace;
 }
 
+
+.header-label {
+    font-size: 40px;
+    color: aqua;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.header-label::after {
+    content: "";
+    display: block;
+    width: 300px;
+    margin-top: 38px;
+    margin-left: 30px;
+    height: 1px;
+    left: 220px;
+    top: -2px;
+    opacity: 0.2;
+    background-color: rgb(185, 180, 180);
+}
+
+.sticky-item {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+}
+
+
+
