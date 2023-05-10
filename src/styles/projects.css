@@ -3,3 +3,18 @@
     position: relative;
     min-height: 60vh;
 }
+
+#project_carousel {
+    max-width: 1000px;
+}
+
+.project_showcase_item {
+    border: solid;
+    border-radius: 30px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+    min-height: 600px;
+}

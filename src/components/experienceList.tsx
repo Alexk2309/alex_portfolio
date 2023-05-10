@@ -14,7 +14,7 @@ interface jobPosting {
     companyLink: string;
 }
 
-function ExperienceList() {
+function ExperienceListings() {
 
     const [value, setValue] = React.useState('0');
     const handleChange = (event: any, newValue: string) => {
@@ -86,5 +86,5 @@ function ExperienceList() {
     );
 }
 
-export default ExperienceList;
+export default ExperienceListings;
 

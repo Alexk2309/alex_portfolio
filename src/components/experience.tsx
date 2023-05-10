@@ -2,7 +2,7 @@ import '../styles/experience.css';
 import '../styles/index.css';
 import HeaderSection from '../effects/scrollEffect';
 
-import ExperienceList from './experienceList';
+import ExperienceListings from './experienceList';
 
 function Experience() {
     
@@ -10,7 +10,7 @@ function Experience() {
         <HeaderSection>
             <div className='experience_layout'> 
                 <span className='header-label' style={{paddingBottom: '30px'}}>/experience </span>
-                <ExperienceList></ExperienceList>
+                <ExperienceListings></ExperienceListings>
             </div>
         </HeaderSection>
     );

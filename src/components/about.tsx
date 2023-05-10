@@ -2,7 +2,7 @@ import '../styles/about.css';
 import '../styles/index.css';
 import HeaderSection from '../effects/scrollEffect';
 import TechStack from './teckStack';
-import  profilePhoto from '../effects/bmo.jpg'
+import profilePhoto from '../effects/bmo.jpg'
 
 function About() {
     return (
