@@ -21,6 +21,7 @@ code {
     display: flex;
     position: relative;
     flex-direction: row;
+    font-weight: bold;
 }
 
 .header-label::after {
@@ -34,13 +35,6 @@ code {
     top: -2px;
     opacity: 0.2;
     background-color: rgb(185, 180, 180);
-}
-
-.sticky-item {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    
 }
 
 
