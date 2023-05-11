@@ -13,29 +13,25 @@
 .project_showcase_item {
     border-radius: 30px;
     display: flex;
-    flex-direction: column;
-    text-align: center;
     background-size: cover;
-    min-height: 600px;
-    margin-left: 0px;
     position: relative;
-    align-self: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+    height: 600px;
 }
 
 .icons {
     display: flex;
     width: auto;
     fill: gray;
-    
     margin-right: 10px;
-    cursor: pointer;
 }
 
 .icon-row {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    bottom: 10px;
-    left: 470px;
-    
+    align-self: center; 
+    padding-top: 150px;
+    padding-bottom: 5px;
 }
