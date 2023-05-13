@@ -59,7 +59,7 @@ function MyMoon() {
 
 function IntroPage() {
   return (
-    <div className="intro_layout">
+    <div id="intro_layout">
         <div className='intro_content'>
         <motion.div className='example-container' initial={{x: 0}} animate={{x: 200}} > </motion.div>
             <div className='typewriter-container'>

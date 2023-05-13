@@ -6,7 +6,7 @@ const HeaderSection = ({ children, duration = 1.5 }: any) => {
 
     const headerVariants = {
         visible: { opacity: 1, transition: { duration: duration }, y: '0' },
-        hidden: { opacity: 0, y: '10vh' }
+        hidden: { opacity: 0, y: '12vh' }
     };
 
     const control = useAnimation();

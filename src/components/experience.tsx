@@ -7,12 +7,14 @@ import ExperienceListings from './experienceList';
 function Experience() {
     
     return (
-        <HeaderSection>
-            <div className='experience_layout'> 
+        
+        <div id='experience_layout'>
+            <HeaderSection>
                 <span className='header-label' style={{paddingBottom: '30px'}}>/experience </span>
                 <ExperienceListings></ExperienceListings>
-            </div>
-        </HeaderSection>
+            </HeaderSection>
+        </div>
+        
     );
 }
 

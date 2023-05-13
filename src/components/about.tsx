@@ -3,11 +3,16 @@ import '../styles/index.css';
 import HeaderSection from '../effects/scrollEffect';
 import TechStack from './teckStack';
 import profilePhoto from '../effects/bmo.jpg'
+import { useRef, RefObject } from 'react';
+import { Button } from '@mui/material';
+
 
 function About() {
+
     return (
-        <HeaderSection>
-            <div className='about_layout'> 
+        
+        <div id='about_layout'> 
+            <HeaderSection>
                 <span className='header-label'>/about-me</span>
                 <div className='about_content'>
                     <div className='about_description'>
@@ -29,8 +34,8 @@ function About() {
                     </div>
                     <div className='about_layout'></div>
                 </div>
-            </div>
-        </HeaderSection>
+            </HeaderSection>
+        </div>
     );
 }
 

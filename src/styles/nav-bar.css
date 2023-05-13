@@ -1,0 +1,40 @@
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right: 0;
+    padding-right: 5%;
+    bottom: 10%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.scroll-link {
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.scroll-link:hover {
+    color: aqua;
+}
+
+.nav-icons {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    padding-top: 50px;
+}
+
+.icon-link {
+    color: inherit; /* or specify the desired color */
+    text-decoration: none; /* to remove underlines or other decorations */
+    
+    
+}
+.icon-link:hover {
+    color: aqua; /* specify the desired hover color */
+}
+
+
+

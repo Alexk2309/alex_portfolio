@@ -3,6 +3,7 @@ import About from './components/about';
 import Experience from './components/experience';
 import Projects from './components/projects';
 import QuickScrolls from './components/stickyScroll';
+import { useRef } from 'react';
 
 function App() {
     return (

@@ -1,4 +1,4 @@
-.about_layout {
+#about_layout {
     display: flex;
     flex-direction: column;
     padding-left: 15%;
