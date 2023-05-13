@@ -3,14 +3,9 @@ import '../styles/index.css';
 import HeaderSection from '../effects/scrollEffect';
 import TechStack from './teckStack';
 import profilePhoto from '../effects/bmo.jpg'
-import { useRef, RefObject } from 'react';
-import { Button } from '@mui/material';
-
 
 function About() {
-
     return (
-        
         <div id='about_layout'> 
             <HeaderSection>
                 <span className='header-label'>/about-me</span>

@@ -2,7 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const HeaderSection = ({ children, duration = 1.5 }: any) => {
+const HeaderSection = ({ children, duration = 1.5, style = '' }: any) => {
 
     const headerVariants = {
         visible: { opacity: 1, transition: { duration: duration }, y: '0' },
@@ -20,6 +20,7 @@ const HeaderSection = ({ children, duration = 1.5 }: any) => {
     
   return (
     <motion.div
+        style={style}
         ref={ref}
         variants={headerVariants}
         initial="hidden"

@@ -37,7 +37,6 @@ function Item(props: any) {
     useEffect(() => {
         if (showAlert) {
           control.start("visible");
-          
           const timeout = setTimeout(() => {
             handleAlertClose();
           }, 5000); // Set the desired duration in milliseconds

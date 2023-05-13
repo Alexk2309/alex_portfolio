@@ -2,14 +2,15 @@ import '../styles/nav-bar.css';
 import '../styles/index.css';
 
 import { GitHub, Email, LinkedIn } from '@mui/icons-material';
-function QuickScrolls() {
+import HeaderSection from '../effects/scrollEffect';
+function NavigationBar() {
 
-    interface links {
+    interface link {
         name: string;
         id: string;
     }
 
-    const scrollNav: links[] = [
+    const scrollNav: link[] = [
         {name: '/home', id: 'intro_layout'}, 
         { name: '/about-me',id: 'about_layout'}, 
         {name: '/experience', id: 'experience_layout'},
@@ -25,8 +26,10 @@ function QuickScrolls() {
 
     return (
         <div className='sidebar-nav'> 
-            {scrollNav.map((scrollLink) => (
-                <label className='scroll-link' onClick={() => scrollToElement(scrollLink.id)} >{scrollLink.name}</label>
+            {scrollNav.map((scrollLink: link, index: number) => (
+                <HeaderSection key={index} duration={1 + (0.15 * index)} style={{paddingTop: '3px'}}>
+                    <label className='scroll-link' onClick={() => scrollToElement(scrollLink.id)} >{scrollLink.name}</label>
+                </HeaderSection>
             ))}
             <div className='nav-icons'>
                 <a href='mailto:alexkim5682@gmail.com' className='icon-link'>
@@ -42,4 +45,4 @@ function QuickScrolls() {
     );
 }
 
-export default QuickScrolls;
+export default NavigationBar;

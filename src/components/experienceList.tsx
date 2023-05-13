@@ -56,12 +56,12 @@ function ExperienceListings() {
                     style: { background: 'aqua'}
                 }} sx={{ minWidth: '200px'}}>
                     {keys.map((name: string, index: number) => (
-                        <Tab label={name} value={index.toString()} sx={styleTabLabels}/>
+                        <Tab key={index} label={name} value={index.toString()} sx={styleTabLabels}/>
                     ))}
                 </TabList>
                 <div style={{ marginLeft: '100px' }}>
                     {keys.map((name: string, index: number) => (
-                        <TabPanel value={index.toString()} sx={{p: 0}}>
+                        <TabPanel key={index} value={index.toString()} sx={{p: 0}}>
                             <div id='job_info'>
                                 <b id='job_title'> {(JobList as any)[name].jobTitle}
                                 <b> @</b> 
@@ -69,7 +69,7 @@ function ExperienceListings() {
                                 <span id='job_timeline'> {(JobList as any)[name].timePeriod}</span>
                             </div>
                             {(JobList as any)[name].description.map((content: string, index: number) => (
-                                <HeaderSection duration={1 + (index * 0.15)}>
+                                <HeaderSection key={index} duration={1 + (index * 0.15)}>
                                     <div className='job-description'>
                                         <li>
                                             {content}
