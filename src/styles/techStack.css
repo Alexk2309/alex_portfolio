@@ -23,3 +23,11 @@
     padding-top: 2%;
 }
 
+@media only screen and (max-width: 600px) {
+
+    .tech_item li {
+        padding-left: 25px;
+        font-size: 15px;
+    }
+}
+

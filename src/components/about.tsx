@@ -11,14 +11,14 @@ function About() {
                 <span className='header-label'>/about-me</span>
                 <div className='about_content'>
                     <div className='about_description'>
-                        <p style={{fontSize: '20px', maxWidth: '600px', lineHeight: '1.8' }}>
+                        <p id='about-paragraph'>
                             I am a currently a student studying a
                             <b> Bachelor's of Computer Science</b> 
                             <span> at </span>
                             <a href='https://www.unsw.edu.au/' style={{ color: 'aqua', textDecoration: 'none' }} >UNSW. </a>
                             I develop software in my freetime occassionally, while studying fulltime.
                         </p>
-                        <span style={{fontSize: '20px'}}>I am familiar with the following technologies: </span>
+                        <span id='tech-line'>I am familiar with the following technologies: </span>
                         <HeaderSection>
                             <TechStack></TechStack>
                         </HeaderSection>

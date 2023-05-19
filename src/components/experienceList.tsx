@@ -6,6 +6,7 @@ import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
+import { useState } from 'react';
 
 interface jobPosting {
     jobTitle: string;
@@ -20,9 +21,16 @@ function ExperienceListings() {
     const handleChange = (event: any, newValue: string) => {
         setValue(newValue);
     };
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+
+    const mobileStyle = {
+        display: 'flex',
+        flexDirection: 'column'
+    }
+
     
     const JobList: Record<string, jobPosting> = {
-
         Freelance:  {
             jobTitle: 'Web Developer',
             timePeriod: 'DEC 2021 - PRESENT',
@@ -51,15 +59,15 @@ function ExperienceListings() {
     const keys: string[] =  Object.keys(JobList);
     return (
         <TabContext value={value}>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider', display: 'flex', flexDirection: 'row' }}>
-                <TabList onChange={handleChange} orientation='vertical' textColor='inherit' TabIndicatorProps={{
+            <Box sx={mobileStyle}>
+                <TabList onChange={handleChange} orientation={'vertical'} textColor='inherit' TabIndicatorProps={{
                     style: { background: 'aqua'}
                 }} sx={{ minWidth: '200px'}}>
                     {keys.map((name: string, index: number) => (
                         <Tab key={index} label={name} value={index.toString()} sx={styleTabLabels}/>
                     ))}
                 </TabList>
-                <div style={{ marginLeft: '100px' }}>
+                <div id='experience-listing-desc'>
                     {keys.map((name: string, index: number) => (
                         <TabPanel key={index} value={index.toString()} sx={{p: 0}}>
                             <div id='job_info'>

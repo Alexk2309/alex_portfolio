@@ -95,7 +95,7 @@ function Item(props: any) {
 
             <div>
                 <label style={{fontSize: '45px', fontWeight: 'bold'}}>{props.item.name} </label>
-                <p style={{maxWidth: '750px'}}>{props.item.description}</p>
+                <p style={{paddingLeft: '15%', paddingRight: '15%' }}>{props.item.description}</p>
                 <span style={{color: 'aqua', fontWeight: 'bold'}}>{props.item.frameWorksUsed}</span>
             </div>
             

@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     padding-left: 15%;
-    position: relative;
     min-height: 60vh;
     
 }
@@ -16,6 +15,8 @@
 .about_description {
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
 
 #portfolio_photo {
@@ -26,10 +27,64 @@
     align-self: flex-start;
     top: -359px;
 }
- 
+
 #about_final {
     padding-top: 30px;
     font-size: 20px;
     max-width: 600px;
     line-height: 1.8;
+}
+
+#about-paragraph {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+#tech-line {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #about_layout {
+        padding-left: unset;
+        padding: 5%;
+        align-content: center;
+        
+    }
+    .about_content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #tech-line {
+        font-size: 17px;
+    }
+    #about-paragraph {
+        font-size: 18px;
+        max-width: unset;
+        width: 100%;
+        line-height: 1.8
+        
+    }
+
+    #tech-line {
+        font-size: 17px;
+        
+    }
+
+    #about_final {
+        padding-top: 10px;
+        font-size: 18px;
+        max-width: 600px;
+        line-height: 1.8;
+       
+    }
+
+    #portfolio_photo {
+        display: none;
+    }
+
+    
+   
 }

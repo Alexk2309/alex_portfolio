@@ -40,3 +40,15 @@
     padding-top: 150px;
     padding-bottom: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+    #projects_layout {
+        align-self: center;
+        padding-left: unset;
+        padding: 5%
+    }
+    
+    #project_carousel {
+        margin-right: unset;
+    }
+}

@@ -35,5 +35,11 @@
     color: aqua; /* specify the desired hover color */
 }
 
+@media only screen and (max-width: 600px) {
+    .sidebar-nav {
+        display: none;
+    }
+    
+}
 
 

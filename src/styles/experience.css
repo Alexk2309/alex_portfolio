@@ -26,6 +26,11 @@
     left: 0;
 }
 
+#experience-listing-desc {
+    margin-left: 100px;
+}
+
+
 .job-description li {
     position: relative;
     padding-left: 30px;
@@ -38,3 +43,13 @@
     padding-top: 24px;
     max-width: 600px;
 }  
+
+@media only screen and (max-width: 600px) {
+    #experience_layout {
+        padding-left: unset;
+        padding: 5%;
+    }
+    #experience-listing-desc {
+        margin-left: unset;
+    }
+}

@@ -12,8 +12,12 @@
     font-size: 85px;
 }
 
-#bio {
+#intro-line {
     font-size: 40px;
+}
+
+#bio {
+    
     max-width: 600px;
 }
 
@@ -26,7 +30,6 @@
     padding-left: 15%;
     padding-top: 10%;
     text-align: justify;
-    
 }
 
 #portfolio_username {
@@ -38,4 +41,32 @@
     font-size: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+    #intro_layout {
+       align-items: center;
+       min-height: 80vh;
+    }
+    .intro_content {
+        align-items: center;
+        padding-left: unset;
+        text-align: center;
+        margin: 0;
+        padding: 5%;
+    }
+    
+    #bio {
+        font-size: 25px;
+    }
+    #intro-line {
+        font-size: 25px;
+    }
+
+    .example-container {
+        display: none;
+    }
+    .typewriter-container {
+        width: auto;
+        font-size: 50px;
+    }
+} 
 
