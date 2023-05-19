@@ -28,6 +28,10 @@ function ExperienceListings() {
         display: 'flex',
         flexDirection: 'column'
     }
+    const computerStyle = {
+        display: 'flex',
+        flexDirection: 'row'
+    }
 
     
     const JobList: Record<string, jobPosting> = {
@@ -59,7 +63,7 @@ function ExperienceListings() {
     const keys: string[] =  Object.keys(JobList);
     return (
         <TabContext value={value}>
-            <Box sx={mobileStyle}>
+            <Box sx={isMobile ? mobileStyle : computerStyle}>
                 <TabList onChange={handleChange} orientation={'vertical'} textColor='inherit' TabIndicatorProps={{
                     style: { background: 'aqua'}
                 }} sx={{ minWidth: '200px'}}>
