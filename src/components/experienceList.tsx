@@ -1,12 +1,10 @@
 import '../styles/experience.css';
 import HeaderSection from '../effects/scrollEffect';
 import React from 'react';
-import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
-import { useState } from 'react';
 
 interface jobPosting {
     jobTitle: string;
@@ -21,18 +19,6 @@ function ExperienceListings() {
     const handleChange = (event: any, newValue: string) => {
         setValue(newValue);
     };
-
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
-
-    const mobileStyle = {
-        display: 'flex',
-        flexDirection: 'column'
-    }
-    const computerStyle = {
-        display: 'flex',
-        flexDirection: 'row'
-    }
-
     
     const JobList: Record<string, jobPosting> = {
         Freelance:  {
@@ -63,7 +49,7 @@ function ExperienceListings() {
     const keys: string[] =  Object.keys(JobList);
     return (
         <TabContext value={value}>
-            <Box sx={isMobile ? mobileStyle : computerStyle}>
+            <div id='experience-display'>
                 <TabList onChange={handleChange} orientation={'vertical'} textColor='inherit' TabIndicatorProps={{
                     style: { background: 'aqua'}
                 }} sx={{ minWidth: '200px'}}>
@@ -92,7 +78,7 @@ function ExperienceListings() {
                         </TabPanel>
                     ))}
                 </div>
-            </Box>
+            </div>
         </TabContext>
     
     );

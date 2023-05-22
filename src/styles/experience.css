@@ -44,6 +44,12 @@
     max-width: 600px;
 }  
 
+
+#experience-display {
+    display: flex;
+    flex-direction: row;
+}
+
 @media only screen and (max-width: 600px) {
     #experience_layout {
         padding-left: unset;
@@ -51,5 +57,10 @@
     }
     #experience-listing-desc {
         margin-left: unset;
+    }
+
+    #experience-display {
+        display: flex;
+        flex-direction: column;
     }
 }

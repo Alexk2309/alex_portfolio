@@ -12,7 +12,7 @@ function NavigationBar() {
 
     const scrollNav: link[] = [
         {name: '/home', id: 'intro_layout'}, 
-        { name: '/about-me',id: 'about_layout'}, 
+        {name: '/about-me',id: 'about_layout'}, 
         {name: '/experience', id: 'experience_layout'},
         {name: '/projects',id: 'projects_layout'}
     ];

@@ -41,6 +41,23 @@
     font-size: 20px;
 }
 
+#get-in-touch {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+}
+
+#get-in-extra-icons {
+   display: none;
+}
+
+
+
+
 @media only screen and (max-width: 600px) {
     #intro_layout {
        align-items: center;
@@ -67,6 +84,14 @@
     .typewriter-container {
         width: auto;
         font-size: 50px;
+    }
+
+    #get-in-extra-icons {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        padding-top: 15px;
+        color: aqua;
     }
 } 
 
