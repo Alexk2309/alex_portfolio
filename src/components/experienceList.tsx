@@ -30,12 +30,14 @@ function ExperienceListings() {
             "Familiar with CRUD requests, and intergrated api's to work with websites. "],
             companyLink: 'https://github.com/Alexk2309'
         },
+        /*
         Demostration: {
             jobTitle: 'Sample Demoer',
             timePeriod: 'INFINITY',
             description: ['This is just a demo', 'To showcase the different clickable sections', 'Programmed with MUI'],
             companyLink: 'https://mui.com/'
         }
+        */  
     }
 
     const styleTabLabels = {

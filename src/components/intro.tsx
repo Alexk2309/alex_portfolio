@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
 import '../styles/introPage.css';
 import Typewriter from 'typewriter-effect';
-import { Box } from '@mui/material';
 import {Email, GitHub, LinkedIn} from '@mui/icons-material';
+import RocketShip from './rocketShip';
 
 function IntroPage() {
   return (
     <div id="intro_layout">
         <div className='intro_content'>
-        <motion.div className='example-container' initial={{x: 0}} animate={{x: 200}} > </motion.div>
+            <RocketShip></RocketShip>
             <div className='typewriter-container'>
             <Typewriter 
                 options={{
@@ -32,22 +32,25 @@ function IntroPage() {
                 </p>
                 <div style={{display:'flex', flexDirection:'column', paddingTop: '10px'}}>
                     <div>
-                        <Box sx={{border: 'solid', borderRadius: '7px', width: 'auto', alignItems: 'center', color: 'aqua', display: 'inline-flex'}}>
+                        <motion.div
+                            whileHover={{ scale: 1.2 }}
+                            style={{border: 'solid', borderRadius: '7px', width: 'auto', alignItems: 'center', color: 'aqua', display: 'inline-flex'} }>
                             <a href='mailto:alexkim5682@gmail.com' style={{ textDecoration: 'none', color: 'inherit'}}>
                                 <div id='get-in-touch'>
                                     <Email></Email>
                                     <span style={{paddingLeft:'10px', fontSize: '18px'}}>Let's get in touch!</span>
                                 </div>
                             </a>
-                        </Box>
+                        </motion.div>
                     
                     </div>
                     <div id='get-in-extra-icons'>
-                        <a href='https://github.com/Alexk2309' style={{ textDecoration: 'none', color: 'inherit', paddingRight: '10px'}}>
+                        <motion.a href='https://github.com/Alexk2309' whileHover={{ scale: 1.3 }} style={{ textDecoration: 'none', color: 'inherit'}}>
                             <GitHub></GitHub>
-                        </a><a href='https://www.linkedin.com/in/alex-kim-50616a23b/' style={{ textDecoration: 'none', color: 'inherit' }}>
+                        </motion.a>
+                        <motion.a whileHover={{ scale: 1.3 }} href='https://www.linkedin.com/in/alex-kim-50616a23b/' style={{ textDecoration: 'none', color: 'inherit' }}>
                             <LinkedIn></LinkedIn>
-                        </a>
+                        </motion.a>
                     </div>
             
 

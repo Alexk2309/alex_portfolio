@@ -83,13 +83,17 @@ function Item(props: any) {
             </motion.div>
         
             <div className='icon-row' >
-                <a href={props.item.githubLink} className="icons" onClick={(event) => showAlertIfNoLink(props.item, event, true)}>
+                <motion.a
+                whileHover={{ scale: 1.25 }} 
+                href={props.item.githubLink} className="icons" onClick={(event) => showAlertIfNoLink(props.item, event, true)}>
                     <GitHub></GitHub>
-                </a>
+                </motion.a>
                 
-                <a href={props.item.deployLink} className="icons" onClick={(event) => showAlertIfNoLink(props.item, event, false)}>
+                <motion.a
+                    whileHover={{ scale: 1.25 }}
+                    href={props.item.deployLink} className="icons" onClick={(event) => showAlertIfNoLink(props.item, event, false)}>
                     <OpenInBrowser sx={{ scale: '1.2' }}></OpenInBrowser>
-                </a>
+                </motion.a>
     
             </div>     
 
@@ -114,7 +118,7 @@ function Projects() {
             githubLink: 'https://github.com/Alexk2309/Networking',
             deployLink: ''
         },
-
+        /*
         {
             name: "Unfinished",
             description: "More upcomming stay tuned!",
@@ -123,6 +127,7 @@ function Projects() {
             githubLink: '',
             deployLink: ''
         },
+        */
     ]
 
     return (
@@ -130,7 +135,7 @@ function Projects() {
             <HeaderSection>
                 <span className='header-label' style={{paddingBottom: '30px'}}>/projects </span>
                 <div id='project_carousel'>
-                    <Carousel>
+                    <Carousel animation='slide' duration={700}>
                         {items.map( (item, i) => <Item key={i} item={item} /> )}
                     </Carousel>
                 </div>

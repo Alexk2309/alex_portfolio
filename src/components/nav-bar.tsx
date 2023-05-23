@@ -3,6 +3,7 @@ import '../styles/index.css';
 
 import { GitHub, Email, LinkedIn } from '@mui/icons-material';
 import HeaderSection from '../effects/scrollEffect';
+import { motion } from "framer-motion";
 function NavigationBar() {
 
     interface link {
@@ -27,19 +28,20 @@ function NavigationBar() {
     return (
         <div className='sidebar-nav'> 
             {scrollNav.map((scrollLink: link, index: number) => (
-                <HeaderSection key={index} duration={1 + (0.15 * index)} style={{paddingTop: '3px'}}>
+                <HeaderSection whileHover={{ scale: 1.2 }} key={index} duration={1 + (0.15 * index)} style={{paddingTop: '3px'}}>
                     <label className='scroll-link' onClick={() => scrollToElement(scrollLink.id)} >{scrollLink.name}</label>
                 </HeaderSection>
             ))}
             <div className='nav-icons'>
-                <a href='mailto:alexkim5682@gmail.com' className='icon-link'>
+                <motion.a whileHover={{ scale: 1.3 }} href='mailto:alexkim5682@gmail.com' className='icon-link' >
                     <Email></Email>
-                </a>
-                <a href='https://github.com/Alexk2309' className='icon-link'>
+                </motion.a>
+                <motion.a whileHover={{ scale: 1.3 }} href='https://github.com/Alexk2309' className='icon-link'>
                     <GitHub></GitHub>
-                </a><a href='https://www.linkedin.com/in/alex-kim-50616a23b/' className='icon-link'>
+                </motion.a>
+                <motion.a whileHover={{ scale: 1.3 }} href='https://www.linkedin.com/in/alex-kim-50616a23b/' className='icon-link'>
                     <LinkedIn></LinkedIn>
-                </a>
+                </motion.a>
             </div>
         </div>
     );
