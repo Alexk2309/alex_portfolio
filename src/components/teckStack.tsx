@@ -21,7 +21,6 @@ function TechStack() {
             </HeaderSection>
         ))}
     </div>
-
     </>
   );
 }

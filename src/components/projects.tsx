@@ -3,7 +3,6 @@ import '../styles/index.css';
 import HeaderSection from '../effects/scrollEffect';
 import Carousel from 'react-material-ui-carousel'
 import twitterClonePhoto from '../effects/twitter_clone.png'
-import loadingGif from '../effects/Loading.gif'
 import { Alert, } from '@mui/material';
 import { useState, useEffect } from 'react';
 import { motion, useAnimation } from "framer-motion";
@@ -40,12 +39,12 @@ function Item(props: any) {
           const timeout = setTimeout(() => {
             handleAlertClose();
           }, 5000); // Set the desired duration in milliseconds
-          
+
           // Clear the timeout when the component unmounts or when showAlert changes to false
           return () => clearTimeout(timeout);
         }
     }, [control, showAlert]);
-    
+
     function showAlertIfNoLink(item: projectItem, event: any, isGit: boolean) {
         if (isGit) {
             if (item.githubLink === ''){
@@ -58,7 +57,7 @@ function Item(props: any) {
                 event.preventDefault();
                 setShowAlert(true);
             }
-        } 
+        }
     }
 
     const handleAlertClose = () => {
@@ -81,29 +80,28 @@ function Item(props: any) {
                     </Alert>
                 )}
             </motion.div>
-        
+
             <div className='icon-row' >
                 <motion.a
-                whileHover={{ scale: 1.25 }} 
+                whileHover={{ scale: 1.25 }}
                 href={props.item.githubLink} className="icons" onClick={(event) => showAlertIfNoLink(props.item, event, true)}>
                     <GitHub></GitHub>
                 </motion.a>
-                
+
                 <motion.a
                     whileHover={{ scale: 1.25 }}
                     href={props.item.deployLink} className="icons" onClick={(event) => showAlertIfNoLink(props.item, event, false)}>
                     <OpenInBrowser sx={{ scale: '1.2' }}></OpenInBrowser>
                 </motion.a>
-    
-            </div>     
+
+            </div>
 
             <div>
                 <label style={{fontSize: '45px', fontWeight: 'bold'}}>{props.item.name} </label>
                 <p style={{paddingLeft: '15%', paddingRight: '15%' }}>{props.item.description}</p>
                 <span style={{color: 'aqua', fontWeight: 'bold'}}>{props.item.frameWorksUsed}</span>
             </div>
-            
-           
+
         </div>
     )
 }
@@ -131,7 +129,7 @@ function Projects() {
     ]
 
     return (
-        <div id='projects_layout'> 
+        <div id='projects_layout'>
             <HeaderSection>
                 <span className='header-label' style={{paddingBottom: '30px'}}>/projects </span>
                 <div id='project_carousel'>

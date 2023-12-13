@@ -19,13 +19,13 @@ function ExperienceListings() {
     const handleChange = (event: any, newValue: string) => {
         setValue(newValue);
     };
-    
+
     const JobList: Record<string, jobPosting> = {
         Freelance:  {
             jobTitle: 'Web Developer',
             timePeriod: 'DEC 2021 - PRESENT',
-            description: ['Made websites for myself and clients. Clients were family or close friends, for personal websites and businesses.', 
-            'Intergrated a database system using SQL (pSQl), using typeORM.', 
+            description: ['Made websites for myself and clients. Clients were family or close friends, for personal websites and businesses.',
+            'Intergrated a database system using SQL (pSQl), using typeORM.',
             'Created websites with different frameworks, such as express.js, django, and flask.',
             "Familiar with CRUD requests, and intergrated api's to work with websites. "],
             companyLink: 'https://github.com/Alexk2309'
@@ -37,7 +37,7 @@ function ExperienceListings() {
             description: ['This is just a demo', 'To showcase the different clickable sections', 'Programmed with MUI'],
             companyLink: 'https://mui.com/'
         }
-        */  
+        */
     }
 
     const styleTabLabels = {
@@ -64,8 +64,8 @@ function ExperienceListings() {
                         <TabPanel key={index} value={index.toString()} sx={{p: 0}}>
                             <div id='job_info'>
                                 <b id='job_title'> {(JobList as any)[name].jobTitle}
-                                <b> @</b> 
-                                <a href={(JobList as any)[name].companyLink} style={{ color: 'aqua', textDecoration: 'none'}} >{ name }</a></b> 
+                                <b> @</b>
+                                <a href={(JobList as any)[name].companyLink} style={{ color: 'aqua', textDecoration: 'none'}} >{ name }</a></b>
                                 <span id='job_timeline'> {(JobList as any)[name].timePeriod}</span>
                             </div>
                             {(JobList as any)[name].description.map((content: string, index: number) => (
@@ -82,7 +82,6 @@ function ExperienceListings() {
                 </div>
             </div>
         </TabContext>
-    
     );
 }
 

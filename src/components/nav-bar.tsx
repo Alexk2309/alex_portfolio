@@ -12,8 +12,8 @@ function NavigationBar() {
     }
 
     const scrollNav: link[] = [
-        {name: '/home', id: 'intro_layout'}, 
-        {name: '/about-me',id: 'about_layout'}, 
+        {name: '/home', id: 'intro_layout'},
+        {name: '/about-me',id: 'about_layout'},
         {name: '/experience', id: 'experience_layout'},
         {name: '/projects',id: 'projects_layout'}
     ];
@@ -26,7 +26,7 @@ function NavigationBar() {
     }
 
     return (
-        <div className='sidebar-nav'> 
+        <div className='sidebar-nav'>
             {scrollNav.map((scrollLink: link, index: number) => (
                 <HeaderSection whileHover={{ scale: 1.2 }} key={index} duration={1 + (0.15 * index)} style={{paddingTop: '3px'}}>
                     <label className='scroll-link' onClick={() => scrollToElement(scrollLink.id)} >{scrollLink.name}</label>

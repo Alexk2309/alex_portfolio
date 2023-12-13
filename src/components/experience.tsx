@@ -4,7 +4,7 @@ import HeaderSection from '../effects/scrollEffect';
 import ExperienceListings from './experienceList';
 
 function Experience() {
-    
+
     return (
         <div id='experience_layout'>
             <HeaderSection>
@@ -12,7 +12,6 @@ function Experience() {
                 <ExperienceListings></ExperienceListings>
             </HeaderSection>
         </div>
-        
     );
 }
 

@@ -24,13 +24,13 @@ function RocketShip () {
             duration: 12
         });
       }, []);
-    
+
     return (
         <motion.div id='rocket-ship'
         initial={animationVariants.initial}
         variants={animationVariants}
         animate={controls} // Chain the variants for back-and-forth animation
-        
+
         style={{ width: 200, cursor: cursorStyle}}
         onClick={handleAnimationClick}
         >
@@ -40,7 +40,6 @@ function RocketShip () {
                 <path d="M9.479 14.361c-.48.093-.98.139-1.479.139-.5 0-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0l1.079-1.439Z"/>
             </svg>
         </motion.div>
-       
     )
 }
 

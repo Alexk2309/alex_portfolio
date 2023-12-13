@@ -6,13 +6,12 @@ import NavigationBar from './components/nav-bar';
 
 function App() {
     return (
-        <>  
+        <>
             <NavigationBar></NavigationBar>
             <IntroPage></IntroPage>
             <About></About>
             <Experience></Experience>
             <Projects></Projects>
-            
         </>
     );
 }

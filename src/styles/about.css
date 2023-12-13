@@ -3,7 +3,6 @@
     flex-direction: column;
     padding-left: 15%;
     min-height: 60vh;
-    
 }
 
 .about_content {
@@ -20,12 +19,13 @@
 }
 
 #portfolio_photo {
-    scale: 0.3;
+    scale: 0.13;
     display: block;
     position: relative;
     max-width: 100px;
     align-self: flex-start;
-    top: -359px;
+    left: 350px;
+    top: -990px;
 }
 
 #about_final {
@@ -50,8 +50,8 @@
         padding-left: unset;
         padding: 5%;
         align-content: center;
-        
     }
+
     .about_content {
         display: flex;
         flex-direction: row;
@@ -65,12 +65,10 @@
         max-width: unset;
         width: 100%;
         line-height: 1.8
-        
     }
 
     #tech-line {
         font-size: 17px;
-        
     }
 
     #about_final {
@@ -78,13 +76,10 @@
         font-size: 18px;
         max-width: 600px;
         line-height: 1.8;
-       
     }
 
     #portfolio_photo {
         display: none;
     }
 
-    
-   
 }

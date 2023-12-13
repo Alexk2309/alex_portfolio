@@ -2,18 +2,18 @@ import '../styles/about.css';
 import '../styles/index.css';
 import HeaderSection from '../effects/scrollEffect';
 import TechStack from './teckStack';
-import profilePhoto from '../effects/bmo.jpg'
+import profilePhoto from '../effects/me_and_cat.jpg'
 
 function About() {
     return (
-        <div id='about_layout'> 
+        <div id='about_layout'>
             <HeaderSection>
                 <span className='header-label'>/about-me</span>
                 <div className='about_content'>
                     <div className='about_description'>
                         <p id='about-paragraph'>
                             I am a currently a student studying a
-                            <b> Bachelor's of Computer Science</b> 
+                            <b> Bachelor's of Computer Science</b>
                             <span> at </span>
                             <a href='https://www.unsw.edu.au/' style={{ color: 'aqua', textDecoration: 'none' }} >UNSW. </a>
                             I develop software in my freetime occassionally, while studying fulltime.

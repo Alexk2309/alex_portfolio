@@ -10,7 +10,7 @@ function IntroPage() {
         <div className='intro_content'>
             <RocketShip></RocketShip>
             <div className='typewriter-container'>
-            <Typewriter 
+            <Typewriter
                 options={{
                 strings: ['hi, <span id="portfolio_username">alex</span> here.'],
                 autoStart: true,
@@ -19,7 +19,7 @@ function IntroPage() {
                 deleteSpeed: Infinity
             }}/>
             </div>
-            <motion.div 
+            <motion.div
                 initial={{y:200, opacity: 0}}
                 animate={{y:10, opacity: [0.15, 0.95]}} id='bio'
                 transition={{duration: 1,
@@ -42,7 +42,7 @@ function IntroPage() {
                                 </div>
                             </a>
                         </motion.div>
-                    
+
                     </div>
                     <div id='get-in-extra-icons'>
                         <motion.a href='https://github.com/Alexk2309' whileHover={{ scale: 1.3 }} style={{ textDecoration: 'none', color: 'inherit'}}>
@@ -52,11 +52,8 @@ function IntroPage() {
                             <LinkedIn></LinkedIn>
                         </motion.a>
                     </div>
-            
 
                 </div>
-                
-
             </motion.div>
         </div>
     </div>
