@@ -24,11 +24,15 @@ function About() {
                         </HeaderSection>
                         <span id='about_final'>Outside of work I enjoy training, reading, and playing computer games.</span>
                     </div>
+
                     <div id='portfolio_photo'>
                         <img src={profilePhoto} style={{borderRadius: '30px'}} alt='portfolio photo'></img>
                     </div>
-                    <div className='about_layout'></div>
                 </div>
+
+                {/* <div id='portfolio_photo'>
+                    <img src={profilePhoto} style={{borderRadius: '30px'}} alt='portfolio photo'></img>
+                </div> */}
             </HeaderSection>
         </div>
     );

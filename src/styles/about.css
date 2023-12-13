@@ -8,6 +8,7 @@
 .about_content {
     display: flex;
     flex-direction: row;
+    padding: 0;
     max-height: 600px;
 }
 
@@ -16,16 +17,12 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    min-width: 800px;
 }
 
 #portfolio_photo {
-    scale: 0.13;
-    display: block;
-    position: relative;
-    max-width: 100px;
-    align-self: flex-start;
-    left: 350px;
-    top: -990px;
+    transform: scale(0.14);
+    transform-origin: top left;
 }
 
 #about_final {
