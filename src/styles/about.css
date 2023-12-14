@@ -15,9 +15,9 @@
 .about_description {
     display: flex;
     flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    min-width: 800px;
+    flex: 1;
+    padding-right: 250px;
+    min-width: 600px;
 }
 
 #portfolio_photo {
@@ -52,6 +52,12 @@
     .about_content {
         display: flex;
         flex-direction: row;
+    }
+
+    .about_description {
+        min-width: auto;
+        max-width: 100%;
+        padding-right: 0;
     }
 
     #tech-line {
