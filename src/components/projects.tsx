@@ -3,6 +3,7 @@ import '../styles/index.css';
 import HeaderSection from '../effects/scrollEffect';
 import Carousel from 'react-material-ui-carousel'
 import twitterClonePhoto from '../effects/twitter_clone.png'
+import dynamicIpImage from '../effects/bash-script.png'
 import { Alert, } from '@mui/material';
 import { useState, useEffect } from 'react';
 import { motion, useAnimation } from "framer-motion";
@@ -116,16 +117,16 @@ function Projects() {
             githubLink: 'https://github.com/Alexk2309/Networking',
             deployLink: ''
         },
-        /*
         {
-            name: "Unfinished",
-            description: "More upcomming stay tuned!",
-            frameWorksUsed: '',
-            image: loadingGif,
-            githubLink: '',
+            name: "Dynamic Ip-Changer",
+            description: " A shells script that monitor changes in the public IP address of a home server. \
+            When the public IP address changes, it updates the corresponding DNS record on Cloudflare to \
+            ensure that the domain always points to the correct IP address.",
+            frameWorksUsed: 'Shell Scripting',
+            image: dynamicIpImage,
+            githubLink: 'https://github.com/Alexk2309/clouldflare-dynamic-ip-changer',
             deployLink: ''
         },
-        */
     ]
 
     return (
