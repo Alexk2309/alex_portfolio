@@ -12,6 +12,7 @@ function App() {
             <About></About>
             <Experience></Experience>
             <Projects></Projects>
+            <div>hi</div>
         </>
     );
 }
