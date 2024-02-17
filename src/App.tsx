@@ -12,7 +12,7 @@ function App() {
             <About></About>
             <Experience></Experience>
             <Projects></Projects>
-            <div>hi</div>
+            <div style={{fontSize: '200px'}}>TEST</div>
         </>
     );
 }
