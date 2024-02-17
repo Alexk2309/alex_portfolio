@@ -17,13 +17,15 @@ function RocketShip () {
         setCursorStyle('auto');
     };
 
+    
     useEffect(() => {
-        controls.start( animationVariants.end, {
+        controls.start(animationVariants.end, {
             repeat: Infinity,
             repeatType: 'reverse',
             duration: 12
         });
-      }, []);
+        // eslint-disable-next-line
+    }, []);
 
     return (
         <motion.div id='rocket-ship'

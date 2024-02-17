@@ -5,7 +5,7 @@ import Carousel from 'react-material-ui-carousel'
 import twitterClonePhoto from '../effects/twitter_clone.png'
 import dynamicIpImage from '../effects/bash-script.png'
 import { Alert, } from '@mui/material';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { motion, useAnimation } from "framer-motion";
 import { GitHub, OpenInBrowser } from '@mui/icons-material';
 
@@ -34,17 +34,23 @@ function Item(props: any) {
         }
     }, [control, showAlert]);
 
+    const handleAlertClose = useCallback(() => {
+        control.start("hidden");
+        setTimeout(() => {
+            setShowAlert(false);
+        }, 500);
+    }, [control]);
+
     useEffect(() => {
         if (showAlert) {
-          control.start("visible");
-          const timeout = setTimeout(() => {
-            handleAlertClose();
-          }, 5000); // Set the desired duration in milliseconds
+            control.start("visible");
+            const timeout = setTimeout(() => {
+                handleAlertClose();
+            }, 5000);
 
-          // Clear the timeout when the component unmounts or when showAlert changes to false
-          return () => clearTimeout(timeout);
+            return () => clearTimeout(timeout);
         }
-    }, [control, showAlert]);
+    }, [control, showAlert, handleAlertClose]);
 
     function showAlertIfNoLink(item: projectItem, event: any, isGit: boolean) {
         if (isGit) {
@@ -60,13 +66,6 @@ function Item(props: any) {
             }
         }
     }
-
-    const handleAlertClose = () => {
-        control.start("hidden");
-        setTimeout(() => {
-            setShowAlert(false);
-        }, 500);
-    };
 
     return (
         <div className='project_showcase_item' style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${props.item.image})`}}>
@@ -119,9 +118,9 @@ function Projects() {
         },
         {
             name: "Dynamic Ip-Changer",
-            description: " A shells script that monitor changes in the public IP address of a home server. \
-            When the public IP address changes, it updates the corresponding DNS record on Cloudflare to \
-            ensure that the domain always points to the correct IP address.",
+            description: " A shells script that monitor changes in the public IP address of a home server" +
+            "When the public IP address changes, it updates the corresponding DNS record on Cloudflare to" +
+            "ensure that the domain always points to the correct IP address.",
             frameWorksUsed: 'Shell Scripting',
             image: dynamicIpImage,
             githubLink: 'https://github.com/Alexk2309/clouldflare-dynamic-ip-changer',
