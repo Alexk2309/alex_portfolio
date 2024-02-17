@@ -26,13 +26,9 @@ function About() {
                     </div>
 
                     <div id='portfolio_photo'>
-                        <img src={profilePhoto} style={{borderRadius: '30px'}} alt='portfolio photo'></img>
+                        <img src={profilePhoto} style={{borderRadius: '30px'}} alt='Profile'></img>
                     </div>
                 </div>
-
-                {/* <div id='portfolio_photo'>
-                    <img src={profilePhoto} style={{borderRadius: '30px'}} alt='portfolio photo'></img>
-                </div> */}
             </HeaderSection>
         </div>
     );
