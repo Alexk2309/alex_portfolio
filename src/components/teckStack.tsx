@@ -2,9 +2,9 @@ import '../styles/techStack.css';
 import HeaderSection from '../effects/scrollEffect';
 
 const techStackList = {
-    programmingLanguages: ['TypeScript', 'Java', 'Python', 'C'],
-    markUpLanguages: ['Git', 'HTML', 'CSS', 'React.js'],
-    frameWorks: ['Django', 'Express.js', 'Node.js', 'SQL']
+    programmingLanguages: ['TypeScript', 'Java', 'Python', 'C', 'C++',],
+    markUpLanguages: ['Git', 'HTML', 'CSS', 'React.js', 'Tailwind.css' ],
+    frameWorks: ['Django', 'Express.js', 'Node.js', 'SQL', 'AWS',],
 }
 
 function TechStack() {

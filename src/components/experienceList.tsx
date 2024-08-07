@@ -30,14 +30,17 @@ function ExperienceListings() {
             "Familiar with CRUD requests, and intergrated api's to work with websites. "],
             companyLink: 'https://github.com/Alexk2309'
         },
-        /*
-        Demostration: {
-            jobTitle: 'Sample Demoer',
-            timePeriod: 'INFINITY',
-            description: ['This is just a demo', 'To showcase the different clickable sections', 'Programmed with MUI'],
-            companyLink: 'https://mui.com/'
+        "Newscorp Australia": {
+            jobTitle: 'Junior Developer',
+            timePeriod: 'JAn 2024 – JUL 2024',
+            description: [
+                'Assisted the identity team with BAU support fixing bugs for different news websites such as The Daily Telegraph and The Herald Sun.',
+                'Developed an automated testing suite, built with AWS Lambda, that is periodically run through a CRON job via a Slack command for out paywall API. This lowered out Which lowered the amount of production bugs by 50%.',
+                'Assisted in the creation and maintenance of APIs which were used by a variety of others teams',
+                'Caught major production bugs before they were released to the public, by using Splunk and Sumologic to monitor logs and errors.',
+            ],
+            companyLink: 'https://www.newscorpaustralia.com//'
         }
-        */
     }
 
     const styleTabLabels = {

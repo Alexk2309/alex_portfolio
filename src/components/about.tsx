@@ -16,13 +16,13 @@ function About() {
                             <b> Bachelor's of Computer Science</b>
                             <span> at </span>
                             <a href='https://www.unsw.edu.au/' style={{ color: 'aqua', textDecoration: 'none' }} >UNSW. </a>
-                            I develop software in my freetime occassionally, while studying fulltime.
+                            I develop software and contrubuite to open source projects in free time, while studying full time.
                         </p>
                         <span id='tech-line'>I am familiar with the following technologies: </span>
                         <HeaderSection>
                             <TechStack></TechStack>
                         </HeaderSection>
-                        <span id='about_final'>Outside of work I enjoy training, reading, and playing computer games.</span>
+                        <span id='about_final'>Outside of work I enjoy training, reading and playing with my cat :)</span>
                     </div>
                     <img id='portfolio_photo' src={profilePhoto} alt='Profile'></img>
                 </div>
