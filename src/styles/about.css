@@ -16,13 +16,17 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding-right: 250px;
-    min-width: 600px;
+    margin-right: 180px;
+    max-width: 600px;
 }
 
 #portfolio_photo {
-    transform: scale(0.14);
-    transform-origin: top left;
+    align-self: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    width: 400px;
+    margin-right: 20px;
 }
 
 #about_final {
@@ -44,7 +48,7 @@
 
 @media only screen and (max-width: 600px) {
     #about_layout {
-        padding-left: unset;
+        padding-left: 0;
         padding: 5%;
         align-content: center;
     }
@@ -57,7 +61,7 @@
     .about_description {
         min-width: auto;
         max-width: 100%;
-        padding-right: 0;
+        margin-right: 0;
     }
 
     #tech-line {

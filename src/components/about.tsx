@@ -24,10 +24,7 @@ function About() {
                         </HeaderSection>
                         <span id='about_final'>Outside of work I enjoy training, reading, and playing computer games.</span>
                     </div>
-
-                    <div id='portfolio_photo'>
-                        <img src={profilePhoto} style={{borderRadius: '30px'}} alt='Profile'></img>
-                    </div>
+                    <img id='portfolio_photo' src={profilePhoto} alt='Profile'></img>
                 </div>
             </HeaderSection>
         </div>

@@ -20,14 +20,20 @@
 .intro_content {
     position: relative;
     padding-left: 15%;
-    padding-top: 10%;
+    margin-top: 10%;
     text-align: justify;
+}
+
+@media only screen and (max-width: 1400px) {
+    .intro_content {
+        margin-top: 5%;
+    }
 }
 
 #portfolio_username {
     font-weight: bold;
     color: aqua;
-} 
+}
 
 .section_header {
     font-size: 20px;
@@ -61,8 +67,9 @@
         text-align: center;
         margin: 0;
         padding: 5%;
+        margin-top: 50%;
     }
-    
+
     #bio {
         font-size: 25px;
     }
@@ -90,5 +97,5 @@
     #rocket-ship {
         display: none;
     }
-} 
+}
 
