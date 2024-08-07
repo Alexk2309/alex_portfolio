@@ -24,7 +24,7 @@ function IntroPage() {
                 animate={{y:10, opacity: [0.15, 0.95]}} id='bio'
                 transition={{duration: 1,
                     ease: "easeInOut"}}>
-                <span id='intro-line'>WIP </span>
+                <span id='intro-line'></span>
                 <p style={{fontSize: "20px", lineHeight: '1.8'}}>
                     I'm an aspiring software engineer, currently based in Sydney.
                     I have interest in fullstack development and data science. I
